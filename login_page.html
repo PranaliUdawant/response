@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- on google font site  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .box {
+            background-color: blueviolet;
+            height: 130px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+
+            width: 400px;
+            border: 2px solid blueviolet;
+            margin-top: -102px;
+        }
+
+        .card-header {
+
+            background-image: url("./asset/background.svg");
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* vertically when we use flex direction column  */
+        }
+
+        .card-header * {
+            color: white;
+
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .input-group {
+            display: flex;
+
+        }
+
+        .input-group>span {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+        }
+
+        .input-group>input {
+            width: 250px;
+        }
+
+        .input-group+p {
+            margin: 15px;
+        }
+
+        .vpn {
+            width: 100%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .vpn+p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .help {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Secure Login</h1>
+                <p>Powered By Pranali</p>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <span>Username</span>
+                    <input type="text" class="hvr-grow">
+                </div>
+                <p>Lorem ipsum dolor sit amet.
+                </p>
+                <div class="input-group">
+                    <span>Class Pin</span>
+                    <input type="text" class="hvr-grow">
+                </div>
+                <div class="help">
+                    <p>Lorem ipsum dolor sit amet.
+                        <a href="">
+                            <p>Forgot Password</p>
+                    </p></a>
+                </div>
+                <div class="input-group">
+                    <span>Password</span>
+                    <input type="text" class="hvr-grow">
+                </div>
+                <p>Lorem ipsum dolor sit amet.
+                </p>
+                <a href=""> <button class="vpn">Login</button>
+
+                    <p>Trouble login</p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
